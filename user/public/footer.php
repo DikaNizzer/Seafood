@@ -1,7 +1,7 @@
 <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Pemrograman Basis Data 2021</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Andika Surya R  <a href="https://www.bootstrapdash.com/" target="_blank">152011513034</a></span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Andika Surya Rahmad  <a href="https://www.bootstrapdash.com/" target="_blank">152011513034</a></span>
             </div>
           </footer>
         </div>
@@ -29,7 +29,7 @@
     <script src="../../template/assets/js/misc.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
+    <script src="../../template/assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
 
     <!-- BOTSTRAP -->

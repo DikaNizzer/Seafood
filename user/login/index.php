@@ -109,7 +109,7 @@ $negara = query("SELECT * FROM negara ");
           <div class="row align-items-center">
             <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="../public/images/seafood.png" width="470" alt="hero-header" /></div>
             <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-              <h4 class="fw-bold font-sans-serif">Become Master</h4>
+              <!-- <h4 class="fw-bold font-sans-serif">Become Master</h4> -->
               <h1 class="fs-6 fs-xl-7 mb-5">Pesan Seafood Secara Online di Sini</h1><a class="btn btn-primary me-2" href="#!" role="button">Lihat Produk Kami</a>
             </div>
           </div>
@@ -205,8 +205,7 @@ $negara = query("SELECT * FROM negara ");
                             <?php foreach($negara as $neg) : ?>
                             <option value="<?= $neg['id_negara'] ?>"><?= $neg['nama_negara'] ?></option>
                             <?php endforeach; ?>
-                            <!-- <option value="2">Two</option>
-                            <option value="3">Three</option> -->
+
                         </select>
 								</div>
         </div>

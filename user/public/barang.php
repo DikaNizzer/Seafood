@@ -5,7 +5,7 @@ require 'method.php';
 
 $hasil = query("SELECT * FROM barTersedia"); //memanggil fungsi query untuk mengambil data Baranng
 
-//mencari data kategory
+//mencari data dengan kata kunci
 if (isset ($_POST["cari"])){
   $hasil = cari($_POST["data"]);
 }

@@ -71,6 +71,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="barang2.php">
+              <i class="mdi mdi-archive menu-icon"></i>
+              <span class="menu-title">Barang2</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="keranjang.php">
               <i class="mdi mdi-basket menu-icon"></i>
               <span class="menu-title">Keranjang</span>

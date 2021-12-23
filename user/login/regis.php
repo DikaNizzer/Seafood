@@ -52,7 +52,5 @@ if( isset($_POST["login"]) ) {
         </script>";
     }
 
-    // $error = true;
-
 }
 ?>

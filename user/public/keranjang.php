@@ -41,7 +41,6 @@ $hasil = query("call pembelian('$id')");
                                 <th>alamat pengirirman </th>
                                 <th>total berat</th>
                                 <th>Total Harga</th>
-                                <!-- <th>Password</th> -->
                                 <th>Menu</th>
                             </tr>
                         </thead>

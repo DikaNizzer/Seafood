@@ -14,13 +14,12 @@ else{
     $_SESSION['keranjang'][$id_barang] = 1;
 }
 
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-// echo "<script> 
-//     alert('Berhasil membeli barang dengan id ');
-//     document.location.href = 'barang2.php';
-//     </script>";
+echo 
+        "<script> 
+        alert('Barang Berhasil DI Tambah');
+        document.location.href = 'keranjang2.php';
+        </script>";
+
 
 
 ?>

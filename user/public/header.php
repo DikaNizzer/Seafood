@@ -71,17 +71,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="barang2.php">
-              <i class="mdi mdi-archive menu-icon"></i>
-              <span class="menu-title">Barang2</span>
+            <a class="nav-link" href="keranjang2.php">
+              <i class="mdi mdi-basket menu-icon"></i>
+              <span class="menu-title">Keranjang </span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="keranjang.php">
-              <i class="mdi mdi-basket menu-icon"></i>
-              <span class="menu-title">Keranjang</span>
+              <i class="mdi mdi-cart-outline menu-icon"></i>
+              <span class="menu-title">Pemesanan</span>
             </a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="barang.php">
               <i class="mdi mdi-barcode-scan menu-icon"></i>

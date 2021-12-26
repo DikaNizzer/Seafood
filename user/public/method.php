@@ -36,6 +36,4 @@ function regis($data){
     return mysqli_affected_rows($koneksi); //cek berhasil tidaknya baris yang terubah
 }
 
- 
-
 ?>

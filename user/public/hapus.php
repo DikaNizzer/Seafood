@@ -20,13 +20,13 @@ if(isset($_SESSION["keranjang"][$id_barang])){
             unset($_SESSION['keranjang'][$id_barang]);
             echo "<script> 
                 alert('Barang berhasil dihapus');
-                document.location.href = 'keranjang2.php';
+                document.location.href = 'keranjang.php';
                 </script>"; 
         }
 
         echo "<script> 
         alert('Barang berhasil dihapus');
-        document.location.href = 'keranjang2.php';
+        document.location.href = 'keranjang.php';
         </script>";
 }
 

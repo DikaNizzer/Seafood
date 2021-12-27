@@ -71,13 +71,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="keranjang2.php">
+            <a class="nav-link" href="keranjang.php">
               <i class="mdi mdi-basket menu-icon"></i>
               <span class="menu-title">Keranjang </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="keranjang.php">
+            <a class="nav-link" href="pemesanan.php">
               <i class="mdi mdi-cart-outline menu-icon"></i>
               <span class="menu-title">Pemesanan</span>
             </a>

@@ -17,7 +17,7 @@ else{
 echo 
         "<script> 
         alert('Barang Berhasil DI Tambah');
-        document.location.href = 'keranjang2.php';
+        document.location.href = 'keranjang.php';
         </script>";
 
 

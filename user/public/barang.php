@@ -23,7 +23,8 @@ function cari($data){
               nama_barang LIKE '%$data%'";
 
   return query ($query);
-}
+} 
+
 
 ?>
 

@@ -117,11 +117,9 @@ if(empty($_SESSION['keranjang']) OR !isset($_SESSION['keranjang'])){
     </div>
   </div>
 </div>
-<pre>
-<?php
-print_r($_SESSION['keranjang']);
-?>
-</pre>
+
+
+<!-- Untuk Input Data Ke Pemesanan -->
 <?php 
     if(isset($_POST['pesan'])){
         //Ambil Data

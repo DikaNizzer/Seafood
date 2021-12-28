@@ -36,4 +36,90 @@ function regis($data){
     return mysqli_affected_rows($koneksi); //cek berhasil tidaknya baris yang terubah
 }
 
+// function upload untuk foto
+function upload(){
+
+    $namafile= $_FILES['bukti']['name'];
+    $ukuran = $_FILES['bukti']['size'];
+    $error = $_FILES['bukti']['error'];
+    $tempat = $_FILES['bukti']['tmp_name'];
+
+    //Cek Upload gambbar
+
+    if($error ==4){
+        echo "<script>
+                alert ('Upload Gambar Dahulu')
+                </script>";
+
+            return false;
+    }
+
+    //hanya boleh up gambar
+    $ekstensiboleh = ['jpg', 'jpeg', 'png'];
+    $ekstensiupload = explode('.', $namafile);
+    $ekstensiupload = strtolower (end($ekstensiupload));
+
+    if( !in_array($ekstensiupload, $ekstensiboleh)){
+        echo "<script>
+                alert ('Yang Anda Upload Bukan Gambar')
+                </script>";
+
+            return false;
+    }
+    
+
+    // //cek ukuran
+    // if($ukuran > 10000){
+    //     echo "<script>
+    //             alert ('Ukuran Gambar Terlalu Besar')
+    //             </script>";
+
+    //         return false;
+    // }
+
+    //upload
+    //Ganti NamaMh
+    $namafotobaru= uniqid();
+    $namafotobaru.= ".";
+    $namafotobaru.=$ekstensiupload;
+
+    move_uploaded_file($tempat, 'bukti/'.$namafotobaru);
+    return $namafotobaru;
+}
+
+
+//Untuk Menambahkan Dat pembayaran
+if(isset($_POST['konfirmasi'])){
+        
+    if (pembayaran($_POST) > 0){
+      echo "<script> 
+              alert('Berhasil !!');
+              document.location.href = 'index.php';
+          </script>";
+  }else{
+      echo "<script> 
+      alert('Gagal !!');
+      document.location.href = 'index.php';
+      </script>";
+  }
+
+  }
+function pembayaran($data){
+    global $koneksi;
+        //Ambil Data
+        $idpesan = $data['id'];
+        $bukti = upload();     
+        $jenis = $data['metode'];
+        if( !$bukti){
+            return false;
+        } 
+
+        //Memasukkan Data Ke tabel Pemesanan
+        $masukan="INSERT INTO pembayaran(`id_pemesanan`, `bukti_pembayaran`, `jenis_pembayaran`)
+        VALUES ( '$idpesan', '$bukti', '$jenis')";
+    mysqli_query($koneksi, $masukan); //buat query
+    return mysqli_affected_rows($koneksi); //cek berhasil tidaknya baris yang terubah
+
+}
+
 ?>

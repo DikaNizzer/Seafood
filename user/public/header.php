@@ -84,9 +84,9 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="barang.php">
+            <a class="nav-link" href="pembayaran.php">
               <i class="mdi mdi-barcode-scan menu-icon"></i>
-              <span class="menu-title">Pembayaran</span>
+              <span class="menu-title">Riwayat Pembayaran</span>
             </a>
           </li>
           <li class="nav-item">

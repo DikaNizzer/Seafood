@@ -1,13 +1,13 @@
 <?php
 include 'header.php';
 require 'method.php';
-
+$idkonsumen = $_SESSION["user"]["id_calon_konsumen"];
 $hasil = query("SELECT * from pembayaran join pemesanan
 ON (pembayaran.id_pemesanan = pemesanan.id_pemesanan)
 join detail_pemesanan
 on (pemesanan.id_pemesanan = detail_pemesanan.id_pemesanan)
 join barang
-on (detail_pemesanan.id_barang = barang.id_barang) ");
+on (detail_pemesanan.id_barang = barang.id_barang) where id_calon_konsumen = '$idkonsumen' ");
 
 if($hasil == null){
     echo "<script> 

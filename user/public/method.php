@@ -93,12 +93,12 @@ if(isset($_POST['konfirmasi'])){
         
     if (pembayaran($_POST) > 0){
       echo "<script> 
-              alert('Berhasil !!');
-              document.location.href = 'index.php';
+              alert('Pembayaran Berhasil !!');
+              document.location.href = 'pembayaran.php';
           </script>";
   }else{
       echo "<script> 
-      alert('Gagal !!');
+      alert('Pembayaran Gagal !!');
       document.location.href = 'index.php';
       </script>";
   }
